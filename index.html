@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    
+<header>
+    <nav class="navbar">
+        <a href="#" class="logo"> Coffee <span>.</span> </a>
+        <ul class="menu-links">
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">İçerik</a></li>
+            <li><a href="#">Referanslar</a></li>
+            <li><a href="#">Hakkımızda</a></li>
+            <li><a href="#">İletişim</a></li>
+        </ul>
+        <span id="menu-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+</header>
+
+
+<section class="hero-section">
+
+<div class="content">
+    <h1>Bi KAHVE?</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum architecto adipisci autem.
+    </p>
+    <button>Sipariş Ver</button>
+</div>
+
+</section>
+
+
+<script>
+    const header = document.querySelector("header");
+    const menuBtn = document.querySelector("#menu-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    menuBtn.addEventListener("click", () => {
+        header.classList.toggle("show-mobile-menu");
+    });
+
+    closeMenuBtn.addEventListener("click", () => {
+        menuBtn.click();
+    });
+</script>
+</body>
+</html>
